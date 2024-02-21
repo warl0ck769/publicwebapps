@@ -1,0 +1,3 @@
+$SID = "YOUR_SID_HERE"
+$UserName = (New-Object System.Security.Principal.SecurityIdentifier($SID)).Translate([System.Security.Principal.NTAccount]).Value
+Write-Output $UserName
